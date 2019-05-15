@@ -1,5 +1,5 @@
 "use strict";
-const { describe, it, equals } = require("./framework");
+const { describe, it, equals, often } = require("./framework");
 
 describe("basic calculations", function() {
   it("should add two numbers", function() {
@@ -7,8 +7,8 @@ describe("basic calculations", function() {
     equals(2, r);
   });
 
-  it("substract two numbers", function() {
-    const r = 2 - 1;
-    equals(1, r);
+  it("should add two numbers", function() {
+    const r = 2 + 1;
+    equals(2, r);
   });
 });
